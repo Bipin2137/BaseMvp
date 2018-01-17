@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#282828"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivPoster"
+                    android:layout_width="140dp"
+                    android:layout_height="180dp"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/poster" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/quarter_margin"
+                    android:layout_marginRight="@dimen/quarter_margin"
+                    android:layout_toEndOf="@+id/ivPoster"
+                    android:layout_toRightOf="@+id/ivPoster"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_lg"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/mini_quarter_margin"
+                        android:layout_marginTop="@dimen/mini_quarter_margin"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_md" />
+
+                    <TextView
+                        android:id="@+id/tvGenre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/mini_quarter_margin"
+                        android:layout_marginTop="@dimen/mini_quarter_margin"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_md" />
+
+                    <TextView
+                        android:id="@+id/tvRated"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/mini_quarter_margin"
+                        android:layout_marginTop="@dimen/mini_quarter_margin"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_md" />
+
+                    <TextView
+                        android:id="@+id/tvReleased"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/mini_quarter_margin"
+                        android:layout_marginTop="@dimen/mini_quarter_margin"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_md" />
+
+                    <TextView
+                        android:id="@+id/tvRuntime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/mini_quarter_margin"
+                        android:layout_marginTop="@dimen/mini_quarter_margin"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_md" />
+
+                    <TextView
+                        android:id="@+id/tvImdbRating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/mini_quarter_margin"
+                        android:layout_marginTop="@dimen/mini_quarter_margin"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_md" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/half_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvPlot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_md" />
+
+                <TextView
+                    android:id="@+id/tvActors"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/mini_quarter_margin"
+                    android:layout_marginTop="@dimen/mini_quarter_margin"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_md" />
+
+                <TextView
+                    android:id="@+id/tvWriter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/mini_quarter_margin"
+                    android:layout_marginTop="@dimen/mini_quarter_margin"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_md" />
+
+                <TextView
+                    android:id="@+id/tvAwards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/mini_quarter_margin"
+                    android:layout_marginTop="@dimen/mini_quarter_margin"
+                    android:textColor="@color/colorGoldDark"
+                    android:textSize="@dimen/text_size_md" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvRatings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/half_margin"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_md"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/ratingRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'me.tatarka:gradle-retrolambda:3.7.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    // SDK
+    minSdkVersion = 15
+    targetSdkVersion = 26
+    compileSdkVersion = 26
+    buildToolsVersion = '27.0.3'
+
+    // Dependencies
+    supportVersion = '27.0.2'
+    archVersion = '1.0.0'
+    retrofitVersion = '2.3.0'
+    okhttpVersion = '3.8.0'
+    junitVersion = '4.12'
+    rxJavaVersion = '2.1.4'
+    rxAndroidVersion = '2.0.1'
+    testRunnerVersion = '1.0.1'
+    espressoVersion = '3.0.1'
+    toastyVersion = '1.2.8'
+    timberVersion = "4.6.0"
+    butterKnifeVersion = '8.8.1'
+    leakcanaryVersion = '1.5.4'
+    glideVersion = '4.4.0'
+}

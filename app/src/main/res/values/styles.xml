@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorGold</item>
+        <item name="colorPrimaryDark">@color/colorGoldDark</item>
+        <item name="colorAccent">@color/colorGoldAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorGold</item>
+        <item name="colorPrimaryDark">@color/colorGoldDark</item>
+        <item name="colorAccent">@color/colorGoldAccent</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorGold</item>
+        <item name="colorPrimaryDark">@color/colorGoldDark</item>
+        <item name="colorAccent">@color/colorGoldAccent</item>
+    </style>
+
+</resources>

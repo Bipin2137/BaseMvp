@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">CineBuzz</string>
+    <string name="no_internet_available">Please check your internet connection</string>
+    <string name="no_data_is_found">Result not found</string>
+    <string name="year">Year:</string>
+    <string name="search">Search</string>
+    <string name="end_of_result">End of result</string>
+    <string name="please_wait">Please wait</string>
+    <string name="poster">Poster</string>
+    <string name="ratings">Ratings</string>
+    <string name="type">Type:</string>
+    <string name="genre">Genre:</string>
+    <string name="rated">Rated:</string>
+    <string name="released">Released:</string>
+    <string name="runtime">Runtime:</string>
+    <string name="imdbRating">ImdbRating:</string>
+    <string name="plot">Plot:</string>
+    <string name="actors">Actors:</string>
+    <string name="writers">Writers:</string>
+    <string name="awards">Awards:</string>
+    <string name="readMore">Read More</string>
+    <string name="showLess">Show Less</string>
+    <string name="search_for_your_fav_movie">Search for your favourite movies, series or episode</string>
+</resources>
